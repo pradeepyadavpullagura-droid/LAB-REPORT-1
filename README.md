@@ -10,8 +10,8 @@
 
 ## Live Link
 
-- **Deployment Status:** Deployment pending
-- **Note:** Local development and testing are fully verified. Deployment to cloud hosting is pending configuration and submission authorization.
+- **Production URL:** [https://lab-01-pradeepyadavpullagura-droids-projects.vercel.app](https://lab-01-pradeepyadavpullagura-droids-projects.vercel.app)
+- **Deployment Platform:** Vercel
 
 ## Objective
 
@@ -28,7 +28,6 @@ To set up a Node.js project, understand `package.json` configuration, create a b
 ## Project Structure
 
 ```text
-lab-01/
 ├── screenshots/
 │   ├── terminal-execution.png
 │   ├── http-server.png
@@ -38,6 +37,7 @@ lab-01/
 │   └── not-found.png
 ├── server-http.js
 ├── server.js
+├── vercel.json
 ├── package.json
 ├── package-lock.json
 ├── .gitignore
@@ -65,19 +65,13 @@ lab-01/
 
 ### Steps to Run
 
-1. Open a terminal and navigate to the project directory:
-
-   ```bash
-   cd lab-01
-   ```
-
-2. Install the dependencies:
+1. Open a terminal in the project directory and install dependencies:
 
    ```bash
    npm install
    ```
 
-3. Start the Express server:
+2. Start the Express server:
 
    ```bash
    npm start

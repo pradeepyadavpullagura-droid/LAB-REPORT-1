@@ -29,7 +29,11 @@ app.use((request, response) => {
     response.status(404).send("404 - Page Not Found");
 });
 
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Express server running at http://localhost:${PORT}`);
-});
+// Start the server (only listen when not running as a Vercel serverless function)
+if (!process.env.VERCEL) {
+    app.listen(PORT, () => {
+        console.log(`Express server running at http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
